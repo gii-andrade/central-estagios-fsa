@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "cpf": "123456",
+            "password_hash": "$2y$12$VnsXK3CEQBI7nNxKgdGo4eycyUQNkALjTfdPLkVkt5r9SholUkuma",
+            "name": "Usu\u00e1rio",
+            "created_at": "2026-06-12 16:29:59",
+            "last_login": "2026-06-12 16:29:59"
+        },
+        {
+            "id": 2,
+            "cpf": "12345678909",
+            "password_hash": "$2y$12$9IjCttLvM71P0Kdp3BXvseloIYqnFk0KGKyEL4wcbAw6SaVxb\/lXq",
+            "name": "Usu\u00e1rio",
+            "created_at": "2026-06-12 16:37:28",
+            "last_login": "2026-06-12 16:37:28"
+        },
+        {
+            "id": 3,
+            "cpf": "93465123789",
+            "password_hash": "$2y$12$AYeZj6qlDFA990TV9t60UepDngz\/06uUOcJdHQ9Tvh3qKJmRUj1Ci",
+            "name": "Lav\u00ednia Carrasco",
+            "created_at": "2026-06-12 16:44:26",
+            "last_login": "2026-06-12 16:44:26"
+        }
+    ]
+}
