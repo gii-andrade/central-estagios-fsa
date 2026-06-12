@@ -1,10 +1,10 @@
 <?php
-session_start();
-
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 // Configurações
 define('SITE_NAME', 'Central de Estágios - FSA');
 define('SITE_URL', 'http://localhost:8000');
-
 // Função para verificar login
 function checkAuth() {
     if (!isset($_SESSION['user_id'])) {
@@ -12,7 +12,6 @@ function checkAuth() {
         exit;
     }
 }
-
 // Função para carregar dados
 function loadData($key) {
     $file = __DIR__ . "/../data/{$key}.json";
@@ -21,7 +20,6 @@ function loadData($key) {
     }
     return null;
 }
-
 function saveData($key, $data) {
     $dir = __DIR__ . "/../data";
     if (!is_dir($dir)) {
@@ -29,7 +27,6 @@ function saveData($key, $data) {
     }
     file_put_contents("{$dir}/{$key}.json", json_encode($data, JSON_PRETTY_PRINT));
 }
-
 // Dados iniciais para vagas
 function getInitialJobs() {
     return [
